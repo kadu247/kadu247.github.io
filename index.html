@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayZUnderground - Yet Another Linux Server</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        header {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Toggle button style */
+        .toggle-btn {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #fff;
+            outline: none;
+        }
+
+        /* Cool effect: Neon text */
+        .neon-text {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="neon-text">DayZUnderground - Yet Another Linux Server</h1>
+    </header>
+
+    <main>
+        <p>LinuxServer - Dayz EXP</p>
+    </main>
+
+    <!-- Toggle button for dark mode -->
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+
+    <script>
+        // JavaScript function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            const currentTheme = body.classList.contains('dark-mode') ? 'light-mode' : 'dark-mode';
+            body.classList.remove('dark-mode', 'light-mode');
+            body.classList.add(currentTheme);
+        }
+    </script>
+</body>
+</html>
